@@ -1,0 +1,22 @@
+<nav>
+    <div class="header-and-links">
+        <div class="left-header">
+            <img src="/assets/images/avatar.jpg" alt="Felipe Yanaga">
+            <div class="name-title">
+                {{site.title}}
+            </div>
+        </div>
+        <div class="links">
+            {% for item in site.data.navigation %}
+              <a href="{{ item.link }}" 
+                {% if page.url == item.link %}
+                    class="current"
+                {% else %}
+                    class="link"
+                {% endif %}>
+                    {{ item.name }}
+              </a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
