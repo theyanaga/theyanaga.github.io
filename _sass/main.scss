@@ -99,3 +99,26 @@ footer {
     margin-right: 0;
     margin-left: auto;
 }
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-header > a {
+    text-decoration: none;
+    color:rgba(68, 72, 80, 0.92);
+    :hover {
+        color: rgba(68, 72, 80, 0.42)
+    }
+}
+
+.post-header > a > h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.post-header > h4 {
+    font-size: small;
+    color:rgba(68, 72, 80, 0.57);
+    margin-top: 5px;
+}

@@ -1,6 +1,4 @@
 ---
-layout: default 
+layout: blog 
 permalink: /blog/
 ---
-
-Blogs coming soon! 
