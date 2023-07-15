@@ -1,13 +1,17 @@
 body {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    max-width: 60%;
     height: 100%;
     margin: auto;
     color: rgba(68, 72, 80, 0.92);
     @media (max-width: 1200px) {
         max-width: 90%;
     }
+}
+
+hr {
+    border: 1px solid rgba(3, 20, 56, 0.92);
 }
 
 nav {
@@ -28,20 +32,27 @@ nav {
     margin-bottom: 10px;
     display: flex;
     margin-left: 0;
-    margin-right: auto;
+}
+
+.img-container {
+    width:20%;
+}
+
+.img-container > img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
 }
 
 .name-title {
-    margin:auto;
+    margin-top:auto;
+    margin-left: 30px;
+    margin-bottom: auto;
     font-size: xx-large;
     color:black;
     font-weight: lighter;
 }
 
-.left-header > img {
-    scale: 0.75;
-    border-radius: 50%;
-}
 
 .links {
     margin-top: auto;
@@ -88,13 +99,25 @@ nav {
     color: grey ;
 }
 
+// Morgan magic to have sticky footer
+// .main-wrapper {
+//     height: 95vh;
+// }
+
 footer {
     border-top: 2px solid rgba(3, 20, 56, 0.92);
     display: flex;
+    // Morgan magic shit 
+    // position: fixed;
+    // width: 40%;
+    // bottom: 0;
+    // @media (max-width: 1200px) {
+    //     max-width: 90%;
+    // }
 }
 
 .footer-text {
-    font-size: x-small;
+    font-size: small;
     margin-top: 10px;
     margin-right: 0;
     margin-left: auto;

@@ -10,7 +10,8 @@ source "https://rubygems.org"
 
 
 # Commenting this for github pages
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", github: "jekyll/jekyll", ref: "refs/pull/9248/head"
+# gem "jekyll", "~> 4.3.0"
 
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
