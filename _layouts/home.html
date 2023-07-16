@@ -6,15 +6,17 @@ layout: default
 
 <h1>Recent Posts</h1>
 {% for post in site.posts %}
-    <div class="post-header"> 
+<div class="blog-listing-entry">
+    <div class="blog-listing-header"> 
         <a href="{{ post.url }}">
-                <h2> 
+                <h2 class="blog-listing-title"> 
                     {{post.title}}
                 </h2>
         </a>
-        <h4>
+        <p class="blog-listing-date">
             {{post.formatted-date}}
-        </h4>
-            {{post.description}}
+        </p>
     </div>
+    {{post.description}}
+</div>
 {% endfor %}

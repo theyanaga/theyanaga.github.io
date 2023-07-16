@@ -5,14 +5,14 @@
                 <img src="/assets/images/profile.jpg" alt="Felipe Yanaga">
             </div>
             <div class="name-title">
-                {{site.title}}
+                Felipe Yanaga
             </div>
         </div>
         <div class="links">
             {% for item in site.data.navigation %}
               <a href="{{ item.link }}" 
                 {% if page.url == item.link %}
-                    class="current"
+                    class="current-page"
                 {% else %}
                     class="link"
                 {% endif %}>

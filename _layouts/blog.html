@@ -7,15 +7,17 @@ layout: default
 
 <h1>Blog Posts</h1>
 {% for post in site.posts %}
-    <div class="post-header"> 
-        <a href="{{ post.url }}">
-                <h2> 
-                    {{post.title}}
-                </h2>
-        </a>
-        <h4>
-            {{post.formatted-date}}
-        </h4>
-            {{post.description}}
+    <div class="blog-listing-entry">
+        <div class="blog-listing-header"> 
+            <a href="{{ post.url }}">
+                    <h2 class="blog-listing-title"> 
+                        {{post.title}}
+                    </h2>
+            </a>
+            <p class="blog-listing-date">
+                {{post.formatted-date}}
+            </p>
+        </div>
+        {{post.description}}
     </div>
 {% endfor %}
