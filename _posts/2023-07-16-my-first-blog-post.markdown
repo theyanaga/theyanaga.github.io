@@ -4,7 +4,7 @@ title:  "My First Blog Post"
 date: Jul 16th, 2023
 formatted-date: July 16th, 2023
 categories: reflections 
-description: I've . 
+description: After many months thinking about whether I should start doing something like this or not, I've finally decided to commit and start this blog.
 ---
 
 After many months thinking about whether I should start doing something like this or not, I've finally decided to commit and start this blog.
