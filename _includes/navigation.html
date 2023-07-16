@@ -4,21 +4,41 @@
             <div class="img-container">
                 <img src="/assets/images/profile.jpg" alt="Felipe Yanaga">
             </div>
-            <div class="name-title">
-                Felipe Yanaga
+            <div class="name-and-icons-wrapper"> 
+                 <div class="name-title">
+                     Felipe Yanaga
+                 </div>
+                 <div class="social-media-icons"> 
+                     <a class="icon" href="https://github.com/theyanaga" target="_blank">
+                         <img src="/assets/images/github-svgrepo-com.svg">
+                     </a>
+                     <a class="icon" href="https://twitter.com/theyanaga" target="_blank"> 
+                         <img src="/assets/images/twitter-icon.svg">
+                     </a>
+                 </div>
             </div>
         </div>
-        <div class="links">
-            {% for item in site.data.navigation %}
-              <a href="{{ item.link }}" 
-                {% if page.url == item.link %}
-                    class="current-page"
-                {% else %}
-                    class="link"
-                {% endif %}>
-                    {{ item.name }}
-              </a>
-            {% endfor %}
+        <div class="icons-and-links-wrapper">
+            <div class="social-media-icons-responsive"> 
+                <a class="icon" href="https://github.com/theyanaga" target="_blank">
+                    <img src="/assets/images/github-svgrepo-com.svg">
+                </a>
+                <a class="icon" href="https://twitter.com/theyanaga" target="_blank"> 
+                    <img src="/assets/images/twitter-icon.svg">
+                </a>
+            </div>
+            <div class="links">
+                {% for item in site.data.navigation %}
+                  <a href="{{ item.link }}" 
+                    {% if page.url == item.link %}
+                        class="current-page"
+                    {% else %}
+                        class="link"
+                    {% endif %}>
+                        {{ item.name }}
+                  </a>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </nav>
