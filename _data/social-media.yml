@@ -1,0 +1,9 @@
+- name: Twitter
+  link: https://twitter.com/theyanaga
+  file: /assets/images/twitter-icon.svg
+- name: GitHub 
+  link: https://github.com/theyanaga
+  file: /assets/images/github-icon.svg
+- name: LinkedIn 
+  link: https://www.linkedin.com/in/felipe-yanaga/
+  file: /assets/images/linkedin-icon.svg 

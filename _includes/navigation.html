@@ -9,29 +9,21 @@
                      Felipe Yanaga
                  </div>
                  <div class="social-media-icons"> 
-                     <a class="icon" href="https://github.com/theyanaga" target="_blank">
-                         <img src="/assets/images/github-svgrepo-com.svg">
-                     </a>
-                     <a class="icon" href="https://twitter.com/theyanaga" target="_blank"> 
-                         <img src="/assets/images/twitter-icon.svg">
-                     </a>
-                     <a class="icon" href="https://www.linkedin.com/in/felipe-yanaga/" target="_blank"> 
-                         <img src="/assets/images/linkedin-svgrepo-com.svg">
-                     </a>
+                    {% for icon in site.data.social-media %}
+                        <a class="icon" href="{{ icon.link }}" target="_blank">
+                            <img src="{{ icon.file}}">
+                        </a>
+                    {% endfor %} 
                  </div>
             </div>
         </div>
         <div class="icons-and-links-wrapper">
             <div class="social-media-icons-responsive"> 
-                <a class="icon" href="https://github.com/theyanaga" target="_blank">
-                    <img src="/assets/images/github-svgrepo-com.svg">
-                </a>
-                <a class="icon" href="https://twitter.com/theyanaga" target="_blank"> 
-                    <img src="/assets/images/twitter-icon.svg">
-                </a>
-                <a class="icon" href="https://www.linkedin.com/in/felipe-yanaga/" target="_blank"> 
-                    <img src="/assets/images/linkedin-svgrepo-com.svg">
-                </a>
+                {% for icon in site.data.social-media %}
+                    <a class="icon" href="{{ icon.link }}" target="_blank">
+                        <img src="{{ icon.file}}">
+                    </a>
+                {% endfor %} 
             </div>
             <div class="links">
                 {% for item in site.data.navigation %}
