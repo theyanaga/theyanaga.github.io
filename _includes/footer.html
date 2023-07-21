@@ -1,7 +1,10 @@
 <footer>
-    <div class="social-media">
-        <a href="https://twitter.com/theyanaga" target="_blank"> Twitter </a>
-        <a href="https://github.com/theyanaga" target="_blank"> Github </a>
+    <div class="footer-social-media">
+        {% for icon in site.data.social-media %}
+        <a class="footer-icon" href="{{ icon.link }}" target="_blank">
+            <img src="{{ icon.file}}">
+        </a>
+        {% endfor %} 
     </div>
     <div class="footer-text"> 
         Felipe Yanaga 

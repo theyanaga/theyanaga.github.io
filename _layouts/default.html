@@ -8,12 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/index.js"></script>
   </head>
-  <body style="font-family: 'Roboto', sans-serif;">
+  <body style="font-family: 'Open Sans'">
     <div class="main-wrapper"> 
         {% include navigation.html %}
-        <hr></hr>
-        {{ content }}
+        <div class="grid">
+          <hr></hr>
+          <div class="page-selector">
+            <div class="page-selector-links">
+                {% for item in site.data.navigation %}
+                <div class="page-selector-link">
+                  <a href="{{ item.link }}" 
+                    {% if page.url == item.link %}
+                        class="page-selector-current"
+                    {% else %}
+                        class="page-selector-link"
+                    {% endif %}>
+                        {{ item.name }}
+                  </a>
+                </div>
+                {% endfor %}
+            </div>
+          </div>
+          <div class="content">
+            {{ content }}
+          </div>
+        </div>
         <hr></hr>
     </div>
     {% include footer.html %}
