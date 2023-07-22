@@ -5,11 +5,14 @@
 .post-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     @media (max-width: 550px) {
         display: flex;
         flex-direction: column;
     }
+}
+
+.post-title {
+    font-size: x-large;
 }
 
 .post-header > p-meta {
@@ -53,4 +56,9 @@
 .post-content > p > a {
     text-decoration: none;
     color: rgb(136, 211, 211);
+}
+
+.post-content p {
+    margin-top: 7.5px;
+    margin-bottom: 15px;
 }
