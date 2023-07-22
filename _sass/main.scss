@@ -3,6 +3,7 @@
 body {
     background-color: rgb(248, 246, 244);
     margin: 0;
+    font-family: 'Open Sans';
 }
 
 .main-wrapper {
@@ -355,6 +356,11 @@ nav {
     margin: auto;
 }
 
+.content a {
+    text-decoration: none;
+    color: rgb(136, 211, 211);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -484,6 +490,12 @@ footer {
 
 // this is going to change the page that contains the blog post.
 .post-content > p > a {
+    text-decoration: none;
+    color: rgb(136, 211, 211);
+}
+
+// Blog Pages
+.about-content a {
     text-decoration: none;
     color: rgb(136, 211, 211);
 }
