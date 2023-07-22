@@ -1,0 +1,29 @@
+// These elements style the listings of the blogs.
+.blog-listing-entry {
+    margin-bottom: 15px;
+}
+
+.blog-listing-title {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    color: rgb(136, 211, 211);
+}
+
+.blog-listing-header {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.blog-listing-header > a {
+    text-decoration: none;
+}
+
+.blog-listing-date {
+    font-size: small;
+    color:rgba(68, 72, 80, 0.57);
+    margin-top: 5px;
+}

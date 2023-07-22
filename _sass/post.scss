@@ -1,0 +1,56 @@
+.post-entry {
+    margin-bottom: 25px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @media (max-width: 550px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.post-header > p-meta {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.post-header > .post-header-date {
+    font-size: small;
+    color:rgba(68, 72, 80, 0.57);
+    margin-top: auto;
+    margin-bottom: auto;
+    @media (max-width: 550px) {
+        text-align: center;
+    }
+}
+
+.post-header > a {
+    text-decoration: none;
+    color:rgba(68, 72, 80, 0.92);
+    :hover {
+        color: rgba(68, 72, 80, 0.42)
+    }
+}
+
+.post-header > h1 {
+    margin-bottom: 5px;
+    color: rgb(136, 211, 211);
+    @media (max-width: 550px) {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+.post-header > a > h2 {
+    margin: 0;
+    color: rgb(252, 220, 116);
+    font-weight: 400;
+}
+
+.post-content > p > a {
+    text-decoration: none;
+    color: rgb(136, 211, 211);
+}

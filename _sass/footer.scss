@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media (max-width: 550px) {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    // morgan magic shit 
+    // position: fixed;
+    // width: 40%;
+    // bottom: 0;
+    // @media (max-width: 1200px) {
+    //     max-width: 90%;
+    // }
+}
+
+.footer-social-media {
+    @media (max-width: 550px) {
+        max-width: 30%;
+    }
+    max-width: 10%;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+}
+
+.footer-icon > img{
+    max-width: 50%;
+}
+
+.footer-text {
+    font-size: small;
+    color: rgb(55, 147, 147);
+    margin-right: 0;
+    margin-left: auto;
+}
