@@ -26,10 +26,19 @@ url: https://theyanaga.github.io
 twitter_username: FelipeYanaga
 github_username: theyanaga
 
+asciidoc: asciidoctor
+asciidoc_ext: asciidoc,adoc,ad
+asciidoctor:
+  attributes:
+    - hardbreaks!
+    - source-highlighter=pygments
+    - pygments-css=style
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
