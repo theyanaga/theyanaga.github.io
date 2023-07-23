@@ -1,0 +1,18 @@
+// = Building Your Own Website 
+// :page-layout: post
+// :page-category: lessons 
+// :page-formatted-date: July 21st, 2023
+// :page-description: I have dabbled with creating my own website since I started my journey in Computer Science four years ago. Back then I had no knowledge about programming and just wanted to try things out, but now I gave it a try once again and my experience was completely different, here are a couple of lessons that I learned.
+// :my-previous-post: https://theyanaga.com/reflections/2023/07/16/my-first-blog-post.html
+// :jekyll: https://jekyllrb.com/
+// ---
+
+// Back in 2020, when I first started programming, my goal was to learn how to make my own website. Everyone in social media seemed to be making a push to making their own websites back then and I thought it was a cool project to undertake during my first semester of college. It turns out, as I soon learned, that programming, especially programming well, is extremely difficult and I copying answers from Stack Overflow doesn't always fix your problems. 
+
+// During the process of making my rather ugly looking website, I learned a lot about the development process and I mostly learned to hate it. It was such a difficult task to try and style my pages, making sure that the margins were right and that things were center aligned. I remember trying all the possible Stack Overflow post to no avail, so much so that I dreaded working on that project and just gave up halfway through - no wonder it turned out so bad... 
+
+// Now, after starting my internship at Google, I've been thinking about starting my own blog. I explained most of the reasons why in {my-previous-post}[my previous post], but the gist of it is that I would like to document more about what I am learning. To be completely with you, before a couple of months ago, I didn't feel like I knew a lot, but now that I am taking higher level courses and programming at higher levels, things are really starting to click for me. However, I still struggle to get my thoughts down sometimes - this is where this blog will come in. It will help me document my learnings and it doesn't hurt that everyone will be able to benefit from it (if enough people read this blog, that is).
+
+// With all of this out of the way, I would like to share that creating my own website has been quite fun this time around. Obviously, I had to start from the beginning, given that was my old website was beyond repairmen, and I chose the {jekyll}[Jekyll] framework for the job. I must say that it has been quite a nice experience so far, it is very easy to pick up and it allows us to greatly customize your website while giving us great abstractions for templates. Other than dealing with ruby, everything has been amazing. 
+
+// I would highly recommend people to use Jekyll to build their own website. It's a great way to build a personal brand and to keep track of things! Of course, this site is still in progress, but I hope to be able to complete it by the end of the summer!
