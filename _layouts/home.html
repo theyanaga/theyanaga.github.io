@@ -1,22 +1,38 @@
 ---
 layout: default
 ---
-
-<div class="something">
-    <h1>Recent Posts</h1>
-</div>
-{% for post in site.posts %}
-<div class="blog-listing-entry">
-    <div class="blog-listing-header"> 
-        <a href="{{ post.url }}">
-                <h2 class="blog-listing-title"> 
-                    {{post.title}}
-                </h2>
-        </a>
-        <p class="blog-listing-date">
-            {{post.formatted-date}}
-        </p>
+<div class="home-header">
+    <div class="my-intro-title">
+        <h1>Hi y'all!</h1>
     </div>
-    {{post.description}}
+        <p>
+             I'm Felipe. I'm a student, programmer, speaker and Java enthusiast.
+        </p>
+    <div>
+        In this website, I talk about everything from regular day-to-day college student thing to all things Java!
+        If you are interested in any of these things, you should check out some of my most recent posts below:
+    </div>
 </div>
-{% endfor %}
+
+<div class="home-posts">
+    <div class="home-posts-header">
+        <h1>
+            Recent Posts
+        </h1>
+    </div>
+    {% for post in site.posts limit:3 %}
+    <div class="blog-listing-entry">
+        <div class="blog-listing-header"> 
+            <a href="{{ post.url }}">
+                    <h2 class="blog-listing-title"> 
+                        {{post.title}}
+                    </h2>
+            </a>
+            <p class="blog-listing-date">
+                {{post.formatted-date}}
+            </p>
+        </div>
+        {{post.description}}
+    </div>
+    {% endfor %}
+</div> 
