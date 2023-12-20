@@ -1,3 +1,5 @@
+@import "utilities.scss";
+
 nav {
     margin: auto;
     display: flex;
@@ -20,7 +22,6 @@ nav {
     @media (min-width: 550px) {
         display: none;
         visibility: hidden;
-        color:red;
     }
     max-width: 90%;
     display: flex;
@@ -46,7 +47,7 @@ nav {
 
 .name-container {
     font-size: x-large;
-    color: rgb(55, 147, 147);
+    color: $primary_color;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -83,9 +84,9 @@ nav {
 // TODO pick nice color for box
 .page-selector-links {
     box-sizing: border-box;
-    border-bottom: 2px solid rgb(136,211,211);
-    border-left: 2px solid rgb(136,211,211);
-    border-right: 2px solid rgb(136,211,211);
+    border-bottom: 2px solid $secondary_color; 
+    border-left: 2px solid $secondary_color; 
+    border-right: 2px solid $secondary_color; 
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -96,7 +97,7 @@ nav {
     text-align: left;
     font-size: large;
     font-weight: bold;
-    background-color: rgb(248, 246, 244);
+    background-color: $background_color; 
     max-width: none;
     width: 100%;
 }
@@ -114,12 +115,12 @@ nav {
 
 .page-selector-link {
     text-decoration: none;
-    color: rgb(55, 147, 147);
+    color: $primary_color;
 }
 
 .page-selector-current {
     text-decoration: none;
-    color: rgb(136, 211, 211);
+    color: $secondary_color
 }
 
 // non-responsive (web)
@@ -205,7 +206,7 @@ nav {
     margin-bottom: auto;
     font-size: xx-large;
     font-weight: 500;
-    color: rgb(55, 147, 147);
+    color: $primary_color;
     @media (max-width: 550px) {
         text-align: center;
         margin-left: auto;
@@ -251,7 +252,7 @@ nav {
     display: flex;
     text-align: center;
     margin-top: auto;
-    color: rgb(227, 244, 244);
+    color: $nav_links_color;
     margin-bottom: auto;
     margin-left: auto;
     margin-right:0;
@@ -267,7 +268,7 @@ nav {
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
-    color: rgb(55, 147, 147);
+    color: $primary_color;
     font-size: large;
     font-weight: lighter;
 }
@@ -279,7 +280,7 @@ nav {
     margin-right: 5px;
     margin-left: 5px;
     padding-bottom: 3px;
-    color: rgb(136, 211, 211);
+    color: $secondary_color;
     font-size: large;
     font-weight: lighter;
 }
@@ -294,6 +295,4 @@ nav {
     margin-right: 10px;
     text-decoration: none;
     font-size: small;
-    color: grey ;
-    color: rgb(107, 106, 106);
 }

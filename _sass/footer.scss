@@ -1,3 +1,5 @@
+@import "utilities.scss";
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -36,7 +38,7 @@ footer {
 
 .footer-text {
     font-size: small;
-    color: rgb(55, 147, 147);
+    color: $primary_color;
     margin-right: 0;
     margin-left: auto;
 }

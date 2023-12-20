@@ -22,7 +22,7 @@
 
 .post-header > .post-header-date {
     font-size: small;
-    color:rgba(68, 72, 80, 0.57);
+    color: $date_color;
     margin-top: auto;
     margin-bottom: auto;
     @media (max-width: 550px) {
@@ -32,7 +32,7 @@
 
 .post-header > a {
     text-decoration: none;
-    color:rgba(68, 72, 80, 0.92);
+    color:$post_font_color;
     :hover {
         color: rgba(68, 72, 80, 0.42)
     }
@@ -40,7 +40,7 @@
 
 .post-header > h1 {
     margin-bottom: 5px;
-    color: rgb(136, 211, 211);
+    color: $secondary_color;
     @media (max-width: 550px) {
         text-align: center;
         margin-bottom: 5px;
@@ -55,7 +55,7 @@
 
 .post-content > p > a {
     text-decoration: none;
-    color: rgb(136, 211, 211);
+    color: $secondary_color;
 }
 
 .post-content p {
